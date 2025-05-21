@@ -20,3 +20,7 @@ Route::get('/', function () {
 
 
 Route::get('/posts', [PostController::Class, 'index']);
+
+# 課題19-20のルート
+Route::get('/posts/{id}', [PostController::Class, 'show']);
+# 課題19-20のルート終わり
