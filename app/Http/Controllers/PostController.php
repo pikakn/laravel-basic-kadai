@@ -11,7 +11,7 @@ class PostController extends Controller {
     public function index() {
         $posted = DB::table('posts')->get();
 
-        return view('index', compact('posted'));
+        return view('posts.index', compact('posted'));
     }
 
     public function show($id) {
