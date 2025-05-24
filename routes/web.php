@@ -21,6 +21,14 @@ Route::get('/', function () {
 
 Route::get('/posts', [PostController::Class, 'index']);
 
+# 課題24-25のルート
+Route::get('/posts/create', [PostController::class, 'create']);
+
+Route::post('/posts/store', [PostController::class, 'store'])->name('posts.store');
+
+# 課題24-25のルート終わり
+
 # 課題19-20のルート
 Route::get('/posts/{id}', [PostController::Class, 'show']);
 # 課題19-20のルート終わり
+
